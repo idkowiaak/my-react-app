@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-// Jeśli masz plik CSS do navbara, upewnij się, że jest zaimportowany
-// import "./Navbar.css";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // Stan otwarcia menu
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -12,10 +10,7 @@ function Navbar() {
   const handleScroll = (e, targetId) => {
     e.preventDefault();
 
-    // Zamykamy menu po kliknięciu w link (ważne na mobile!)
     setIsOpen(false);
-
-    // Logika scrollowania (zachowana z poprzedniej wersji)
     if (targetId === "home") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
@@ -45,15 +40,12 @@ function Navbar() {
           <div className="logo">Aura Spaces</div>
         </div>
 
-        {/* Przycisk Hamburgera (widoczny tylko na mobile dzięki CSS) */}
         <div className="hamburger" onClick={toggleMenu}>
-          {/* Proste kreski zrobione ze znaków lub divów */}
           <span className={isOpen ? "bar open" : "bar"}></span>
           <span className={isOpen ? "bar open" : "bar"}></span>
           <span className={isOpen ? "bar open" : "bar"}></span>
         </div>
 
-        {/* Lista linków - dodajemy klasę "active" jeśli menu jest otwarte */}
         <div className={`right-side-nav ${isOpen ? "active" : ""}`}>
           <ul>
             {navLinks.map((link) => (
