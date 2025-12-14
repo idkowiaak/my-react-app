@@ -552,17 +552,14 @@ body {
 /* Responsive */
 
 @media screen and (max-width: 1024px) {
-  /* Navbar */
   .right-side-nav ul {
     gap: 25px;
   }
 
-  /* Hero */
   .hero-title {
     font-size: 56px;
   }
 
-  /* About */
   .about-section {
     height: auto;
     padding: 80px 0;
@@ -572,7 +569,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Services */
   .services-section {
     height: auto;
     padding: 80px 0;
@@ -590,7 +586,6 @@ body {
     height: 350px;
   }
 
-  /* Contact */
   .contact-section {
     height: auto;
     margin-right: 0;
@@ -601,7 +596,7 @@ body {
     flex-direction: column;
     display: flex;
     width: 100%;
-    padding: 0 40px; /* Dodano padding zewnętrzny dla estetyki */
+    padding: 0 40px;
   }
 
   .contact-text-container {
@@ -620,21 +615,20 @@ body {
   }
 
   .contact-right-side {
-    width: 100%; /* Pełna szerokość */
+    width: 100%;
     justify-content: center;
     display: flex;
   }
 
-  /* POPRAWKA INPUTÓW TUTAJ: */
   .contact-form {
-    max-width: 100%; /* Usunięto limit 600px, teraz 100% */
+    max-width: 100%;
     width: 100%;
-    align-items: stretch; /* Rozciąga elementy wewnątrz */
+    align-items: stretch;
   }
 
   .contact-form input,
   .contact-form textarea {
-    width: 100%; /* Upewnienie się */
+    width: 100%;
   }
 }
 
@@ -725,7 +719,7 @@ body {
 
   .grid-column-container {
     grid-template-columns: 1fr;
-    width: 90%; /* Nieco szerzej niż 80% */
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -754,7 +748,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 0 20px; /* Zmniejszono padding, więcej miejsca dla treści */
+    padding: 0 20px;
     width: 100%;
   }
 
@@ -798,12 +792,11 @@ body {
     margin-right: 0;
   }
 
-  /* POPRAWKA INPUTÓW TUTAJ: */
   .contact-form {
     width: 100%;
-    padding: 0; /* Usunięto wewnętrzny padding, który ściskał inputy */
+    padding: 0;
     border-radius: 10px;
-    max-width: 100%; /* Pełna szerokość */
+    max-width: 100%;
   }
 
   .contact-form input,
